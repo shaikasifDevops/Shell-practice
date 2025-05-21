@@ -7,15 +7,15 @@ then
     echo "Error : : Please run this script with root access"
     exit 1
 else
-    echo "you are running with root access"
+    echo "You are running with root access"
 fi
 
 
 VALIDATE(){
     if [ $1 -eq 0 ]
-     then
+    then
          echo "installing $2 is .... SUCCESS"
-      else 
+    else 
           echo "Installing $2 is ..... Failure"
           exit 1
     fi
