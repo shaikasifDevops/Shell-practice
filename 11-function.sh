@@ -10,6 +10,7 @@ else
     echo "you are running with root access"
 fi
 
+
 VALIDATE(){
     if [ $1 -eq 0 ]
      then
@@ -17,7 +18,9 @@ VALIDATE(){
       else 
           echo "Installing $2 is ..... Failure"
           exit 1
-    fi}
+    fi
+    
+}
 
 dnf list installed mysql
 
